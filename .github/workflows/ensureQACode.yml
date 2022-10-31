@@ -2,7 +2,7 @@ name: Ensure Dev Code is QAed
 
 on:
   push:
-  pull request:
+  pull_request:
     branches:
       - badSource
 
