@@ -1,4 +1,4 @@
-name: Production Build Test
+name: Production build Test
 
 on:
   pull_request:
