@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run test && tsc",
-    "build2": "npm run test:coverage && tsc",
+    "build": "npm run lint && tsc && cd build && node index.js && cd ..",
     "test": "cd src && jest --",
     "test:coverage": "jest --coverage --watchAll=false",
     "lint": "eslint --cache . --ext ts,tsx",
+    "upload": "node scripts/upload.js",
     "prepare": "husky install"
   },
   "author": "Blad",
